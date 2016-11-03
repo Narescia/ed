@@ -9,25 +9,23 @@ public class Adivina {
 		Random random = new Random ();
 		Scanner scanner = new Scanner (System.in);
 		int numeroAleatorio = random.nextInt(1000)	+ 1;
-		int numero;
-		System.out.println("Tengo un número escondido entre uno y mile, adivina");
+		System.out.println("Tengo un número escondido entre uno y mil, adivina");
 		
 		
 		boolean correcto = false;
+		int contadorIntentos = 0;
 		
 		do{
-			System.out.println("Introduce el número: ");
+			contadorIntentos++;
+			System.out.printf("Introduce el número (intento nº%d): ", contadorIntentos);
 			String line = scanner.nextLine();
-			numero = Integer.parseInt(line);
+			int numero = Integer.parseInt(line);
 			//damos pista al usuario
 			if (numero<numeroAleatorio)
 				System.out.println("Tu número es menor");
 			else if (numero>numeroAleatorio)
 				System.out.println("Tu número es mayor");
-			else
-				correcto = true;
-			
-			
+			correcto = numero == numeroAleatorio;	
 		} while (correcto == false);
 		System.out.println("Has ganado");
 
