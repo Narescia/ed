@@ -17,6 +17,14 @@ public class Vector {
 			
 		return index;
 	}
+	public static int min(int[] v){
+		int min = v[0];
+		for(int index=1;index<v.length;index++){
+			if(v[index]<min)
+				min = v[index];
+		}
+		return min;
+	}
 	
 }
 
