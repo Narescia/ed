@@ -27,7 +27,7 @@ public class Adivina {
 				System.out.println("Tu número es mayor");
 			correcto = numero == numeroAleatorio;	
 		} while (correcto == false);
-		System.out.println("Has ganado");
+		System.out.printf("Has acertado (al intento n2%d).\n ", contadorIntentos);
 
 	}
 
