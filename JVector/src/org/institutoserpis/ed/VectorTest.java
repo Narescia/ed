@@ -27,5 +27,11 @@ public class VectorTest {
 		assertEquals(5, Vector.min(new int[]{5, 15, 7, 9, 12}));
 		assertEquals(1, Vector.min(new int[]{32, 1, 7, 9, 12}));
 	}
+	@Test
+	public void selectionSort(){
+		int[] v = new int[]{32, 15, 7, 9, 12};
+		Vector.selectionSort(v);
+		assertArrayEquals(new int[]{7,9,12,15,32}, v);
+	}
 
 }
