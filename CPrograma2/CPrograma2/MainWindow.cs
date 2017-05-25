@@ -13,4 +13,14 @@ public partial class MainWindow: Gtk.Window
 		Application.Quit ();
 		a.RetVal = true;
 	}
+
+	protected void OnCalendar3DaySelectedDoubleClick (object sender, EventArgs e)
+	{
+		throw new NotImplementedException ();
+	}
+
+	protected void OnGtkScrolledWindowResizeChecked (object sender, EventArgs e)
+	{
+		throw new NotImplementedException ();
+	}
 }
