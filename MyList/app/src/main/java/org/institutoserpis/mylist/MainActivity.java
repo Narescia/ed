@@ -42,7 +42,7 @@ public class MainActivity extends ListActivity {
                         itemSeleccionado, Toast.LENGTH_SHORT).show();
             }
         });
-        
+
 
     }
 
